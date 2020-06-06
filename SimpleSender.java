@@ -169,7 +169,7 @@ public class SimpleSender {
         double convergenceThpt = 0.;
         boolean newAdded = false;
         SimpleSender simpleSender = null;
-        double[][] runSample = new double[5][1];
+        double[][] runSample = new double[15][1];
         boolean normalTransferStarted = false;
         PrintWriter outPrint = null;
         Socket socket = null;
@@ -272,7 +272,7 @@ public class SimpleSender {
                                 newAdded = false;
                                 j=0;
                             }
-                            if(i > 5){
+                            if(i > 15){
                                 startNotSampling();
                                 break;
                             }
